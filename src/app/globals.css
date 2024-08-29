@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .inputField {
+        @apply px-5 py-1 mb-4 border-b-2 border-gray-300 ring-0 focus:ring-0 focus:outline-none;
+    }
+  
+    .section_padding {
+        @apply p-16;
+    }
+  
+    .footer {
+        @apply bg-gray-800 text-white;
+        position: relative;
+    }
+  
+    .sb_footer {
+        @apply flex flex-col;
+    }
+  
+    .sb_footer-links {
+        @apply flex flex-wrap justify-between items-start w-full text-left mb-8;
+    }
+  
+    .sb_footer-links-div {
+        @apply w-40 m-4 flex flex-col ;
+    }
+   .sb_footer-below {
+        @apply flex flex-col md:flex-row justify-between mt-8;
+    }
+  .sb_footer-below-links {
+        @apply flex flex-col md:flex-row gap-4;
+    }
+  .sb_footer-copyright {
+        @apply text-sm text-right;
+    }
+  
+    .social-media {
+        @apply flex gap-4 items-center absolute bottom-4 left-4;
+    }
+}
